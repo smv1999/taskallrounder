@@ -10,35 +10,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    /* .column {
-        float: left;
-        width: 33.33%;
-        padding: 8px 8px;
-    } */
     .col-sm-4 {
         padding: 8px;
     }
-
     .row {
         margin: 0 -5px;
     }
-
     .row:after {
         display: table;
         clear: both;
     }
-
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         padding: 10px;
         height: 180px;
         text-align: center;
+        background-color: #D3D3D3;
+    }
+    .card:hover{
         background-color: #f1f1f1;
     }
-
     .floating {
         animation-name: floating;
         animation-duration: 3s;
@@ -46,7 +40,6 @@
         animation-timing-function: ease-in-out;
         margin-top: 5px;
     }
-
     @keyframes floating {
         from {
             transform: translate(0, 0px);
@@ -60,21 +53,11 @@
             transform: translate(0, -0px);
         }
     }
-
     .container-fluid {
         padding: 20px;
     }
-
     html {
         scroll-behavior: smooth;
-    }
-    .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
     }
 </style>
 
@@ -97,7 +80,7 @@
                     <a class="nav-link" href="texttospeech.html">TTS Conversion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="somegame.html">Games</a>
+                    <a class="nav-link" href="snakegame.html">Games</a>
                 </li>
             </ul>
         </div>
@@ -119,11 +102,11 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <canvas id="canvas" width="300" height="300" style="background-color:#333">
+                    <canvas id="canvas" width="300" height="290" style="background-color:#333">
                     </canvas>
                 </div>
                 <div class="carousel-item">
-                    <img src="tasks.jpg" alt="tasks">
+                    <img src="tasks.jpg" alt="tasks" width="400px" height="270px">
                 </div>
                 <div class="carousel-item">
                     <img src="multitask.jpg" alt="multitask" width="400px" height="270px">
